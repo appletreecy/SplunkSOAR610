@@ -21,10 +21,12 @@ def on_start(container):
 def container_update_2(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
     phantom.debug("container_update_2() called")
 
+    id_value = container.get("id", None)
+
     parameters = []
 
     parameters.append({
-        "container_input": 1,
+        "container_input": id_value,
         "name": None,
         "description": None,
         "label": None,
@@ -41,6 +43,8 @@ def container_update_2(action=None, success=None, container=None, results=None, 
     ################################################################################
 
     # Write your custom code here...
+    phantom.debug("**********")
+    phantom.debug(id_value)
 
     ################################################################################
     ## Custom Code End
