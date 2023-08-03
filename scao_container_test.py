@@ -24,7 +24,7 @@ def container_update_2(action=None, success=None, container=None, results=None, 
     parameters = []
 
     parameters.append({
-        "container_input": None,
+        "container_input": 1,
         "name": None,
         "description": None,
         "label": None,
