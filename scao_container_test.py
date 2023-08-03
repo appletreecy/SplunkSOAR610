@@ -31,7 +31,7 @@ def container_update_2(action=None, success=None, container=None, results=None, 
         "owner": None,
         "sensitivity": None,
         "severity": None,
-        "status": None,
+        "status": "Closed",
         "tags": None,
         "input_json": None,
     })

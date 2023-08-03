@@ -21,7 +21,7 @@
                     "targetPort": "1_in"
                 }
             ],
-            "hash": "58c319867ac3fa50ced9140fc9fbfde8884bdda8",
+            "hash": "a1429da987a7ccdd073bb0cd8743166534695fca",
             "nodes": {
                 "0": {
                     "data": {
@@ -195,7 +195,7 @@
                                 "owner": null,
                                 "sensitivity": null,
                                 "severity": null,
-                                "status": "",
+                                "status": "Closed",
                                 "tags": null
                             }
                         }
@@ -217,7 +217,7 @@
         "schema": "5.0.10",
         "version": "6.1.0.131"
     },
-    "create_time": "2023-08-03T05:06:25.919295+00:00",
+    "create_time": "2023-08-03T05:07:01.358369+00:00",
     "draft_mode": false,
     "labels": [
         "events"
