@@ -12,14 +12,14 @@ from datetime import datetime, timedelta
 def on_start(container):
     phantom.debug('on_start() called')
 
-    # call 'container_update_1' block
-    container_update_1(container=container)
+    # call 'container_update_2' block
+    container_update_2(container=container)
 
     return
 
 @phantom.playbook_block()
-def container_update_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
-    phantom.debug("container_update_1() called")
+def container_update_2(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
+    phantom.debug("container_update_2() called")
 
     parameters = []
 
@@ -31,7 +31,7 @@ def container_update_1(action=None, success=None, container=None, results=None, 
         "owner": None,
         "sensitivity": None,
         "severity": None,
-        "status": "closed",
+        "status": "Closed",
         "tags": None,
         "input_json": None,
     })
@@ -46,7 +46,7 @@ def container_update_1(action=None, success=None, container=None, results=None, 
     ## Custom Code End
     ################################################################################
 
-    phantom.custom_function(custom_function="community/container_update", parameters=parameters, name="container_update_1")
+    phantom.custom_function(custom_function="community/container_update", parameters=parameters, name="container_update_2")
 
     return
 
