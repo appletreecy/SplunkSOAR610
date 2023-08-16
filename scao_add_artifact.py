@@ -26,11 +26,13 @@ def code_1(action=None, success=None, container=None, results=None, handle=None,
     ################################################################################
 
     # Write your custom code here...
-    raw = {}
-    cef = {}
-    cef['sourceAddress'] = '1.1.1.1'
+    for i in range(10):
+        raw = {}
+        cef = {}
+        cef['sourceAddress'] = '1.1.1.1'
+    
 
-    success, message, artifact_id = phantom.add_artifact(
+        success, message, artifact_id = phantom.add_artifact(
         container=container, raw_data=raw, cef_data=cef, label='netflow',
         name='test_event', severity='high',
         identifier=None,
