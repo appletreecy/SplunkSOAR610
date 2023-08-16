@@ -26,7 +26,7 @@ def code_1(action=None, success=None, container=None, results=None, handle=None,
     ################################################################################
 
     # Write your custom code here...
-    data = phantom.collect(container, "artifact:*")
+    data = phantom.collect(container, "artifact:*.cef._raw")
     
     phantom.debug(data)
 
