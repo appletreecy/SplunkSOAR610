@@ -21,7 +21,7 @@
                     "targetPort": "1_in"
                 }
             ],
-            "hash": "0cfde49d063be3b58edea443312f5b27c3a3a50d",
+            "hash": "03104b76559355e1370aff215e94618a6cf6257e",
             "nodes": {
                 "0": {
                     "data": {
@@ -70,7 +70,7 @@
                     "errors": {},
                     "id": "2",
                     "type": "code",
-                    "userCode": "\n    # Write your custom code here...\n    for i in range(10):\n        raw = {}\n        cef = {}\n        cef['sourceAddress'] = '1.1.1.1'\n    \n\n        success, message, artifact_id = phantom.add_artifact(\n        container=container, raw_data=raw, cef_data=cef, label='netflow',\n        name='test_event', severity='high',\n        identifier=None,\n        artifact_type='network')\n\n",
+                    "userCode": "\n    # Write your custom code here...\n    for i in range(2000):\n        raw = {}\n        cef = {}\n        cef['sourceAddress'] = '1.1.1.1'\n    \n\n        success, message, artifact_id = phantom.add_artifact(\n        container=container, raw_data=raw, cef_data=cef, label='netflow',\n        name='test_event', severity='high',\n        identifier=None,\n        artifact_type='network')\n\n",
                     "warnings": {},
                     "x": 980,
                     "y": 640
@@ -85,7 +85,7 @@
         "schema": "5.0.10",
         "version": "6.1.0.131"
     },
-    "create_time": "2023-08-16T01:47:25.600864+00:00",
+    "create_time": "2023-08-16T01:48:22.911763+00:00",
     "draft_mode": false,
     "labels": [
         "events"
