@@ -26,7 +26,7 @@ def code_1(action=None, success=None, container=None, results=None, handle=None,
     ################################################################################
 
     # Write your custom code here...
-    data = phantom.collect(container, "artifact:*", limit=1)
+    data = phantom.collect(container, "artifact:*", limit=10)
     
     phantom.debug(data)
 
