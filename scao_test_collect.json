@@ -21,7 +21,7 @@
                     "targetPort": "1_in"
                 }
             ],
-            "hash": "d89abe6d94c9b67bc4d496a0deedb2cc25e09f4d",
+            "hash": "b8575299bf2636674df12113c45d29941e56e18d",
             "nodes": {
                 "0": {
                     "data": {
@@ -37,7 +37,7 @@
                     "type": "start",
                     "warnings": {},
                     "x": 1000,
-                    "y": 419.9999999999999
+                    "y": 419.9999999999998
                 },
                 "1": {
                     "data": {
@@ -70,7 +70,7 @@
                     "errors": {},
                     "id": "2",
                     "type": "code",
-                    "userCode": "\n    # Write your custom code here...\n    data = phantom.collect(container, \"artifact:*\", limit=2100)\n    \n    phantom.debug(data)\n\n",
+                    "userCode": "\n    # Write your custom code here...\n    data = phantom.collect2(container, \"artifact:*\", limit=2100)\n    \n    phantom.debug(data)\n\n",
                     "warnings": {},
                     "x": 980,
                     "y": 620
@@ -85,7 +85,7 @@
         "schema": "5.0.10",
         "version": "6.1.0.131"
     },
-    "create_time": "2023-08-16T01:53:44.598602+00:00",
+    "create_time": "2023-08-16T23:54:24.165055+00:00",
     "draft_mode": false,
     "labels": [
         "events"
