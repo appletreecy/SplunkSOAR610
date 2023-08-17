@@ -21,7 +21,7 @@
                     "targetPort": "1_in"
                 }
             ],
-            "hash": "a8df77d10b7b4384712c78ac32ddab3b4f73b4e6",
+            "hash": "58733f62ee309a72c6d5ac97c3e31cb9ecb60e8e",
             "nodes": {
                 "0": {
                     "data": {
@@ -70,7 +70,7 @@
                     "errors": {},
                     "id": "2",
                     "type": "code",
-                    "userCode": "\n    # Write your custom code here...\n    data = phantom.collect2(container, datapath=['artifact:*.cef.sourceAddress'], limit=2100)\n    \n    phantom.debug(data)\n\n",
+                    "userCode": "\n    # Write your custom code here...\n    data = phantom.collect2(container=container, datapath=['artifact:*.cef.sourceAddress',], limit=2100)\n    \n    phantom.debug(data)\n\n",
                     "warnings": {},
                     "x": 980,
                     "y": 620
@@ -85,7 +85,7 @@
         "schema": "5.0.10",
         "version": "6.1.0.131"
     },
-    "create_time": "2023-08-17T00:05:42.966849+00:00",
+    "create_time": "2023-08-17T00:10:42.924489+00:00",
     "draft_mode": false,
     "labels": [
         "events"
